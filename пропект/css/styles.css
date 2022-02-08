@@ -1,0 +1,218 @@
+body,html{
+    width: 100%;
+    height: 100%;
+   background-color: silver ;
+
+}
+
+.box{
+    width: 600px;
+    height: 720px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    
+}
+    
+/* select */
+.select{
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+}
+.select.select2{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+}
+
+
+
+.select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+}
+.select select{
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 0.50rem 0.50rem;
+    background: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 1rem;
+    border: 1px solid black
+    color: #000;
+}
+/* input */
+
+.input .input1{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance:none ;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 3px;
+    width: 300px;
+
+}
+
+.input .input2{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance:none ;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 3px;
+    width: 150px;
+    
+}
+.input .input3{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance:none ;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 3px;
+    width: 50px;
+}
+.input .input4{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance:none ;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 3px;
+    width: 50px; 
+}
+.input .input5{
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance:none ;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 3px;
+    width: 230px; 
+}
+.label{
+  width: 120px;
+  font-size: 1 rem;
+  display: inline-block
+  
+  
+}
+/* select2 */
+.select2{
+    display: inline-block;
+    width: 320px;
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+}
+.select2:after{
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+}
+
+.select2 select{
+    
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 0.50rem 0.50rem;
+  background: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  border: 1px solid black
+  color: #000;
+}
+/* select3 */
+.select3{
+    display: inline-block;
+    width: 250px;
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: whitesmoke;
+}
+.select3:after{
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+}
+.select3 select{
+    border: none;
+  display: block;
+  width: 100%;
+  padding: 0.50rem 0.50rem;
+  background: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  border: 1px solid black
+  color: #000;
+} 
+.checkbox{
+    display: none;
+}
+.fake{
+    display:inline-block ;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    position: relative;
+}
+.fake::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: darkturquoise;
+    opacity: 0;
+    transition: .2s;
+}
+.checkbox:checked + .fake::before {
+opacity: 1;
+}
